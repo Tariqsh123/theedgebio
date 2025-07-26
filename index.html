@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Edge Bio</title>
+    <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--above  Nav -->
+<div id="above-nav-main-container">
+    <div id="above-nav-inner-container">
+        <span>New</span>
+        <p>Revolutionizing Healthcare with AI-Powered Precision and Insight.</p>
+        <p id="above-nav-close">X</p>
+    </div>
+</div>
+<script>
+  document.getElementById("above-nav-close").addEventListener("click", function () {
+    document.getElementById("above-nav-main-container").style.display = "none";
+  });
+</script>
+<!--above  Nav -->
+
+<!-- Nav -->
+ <nav class="navbar">
+  <div class="navbar-logo">
+    <img src="images/favicon.webp" alt="">
+    <h1>The Edge Bio</h1>
+  </div>
+
+  <div class="navbar-center">
+    <div class="navbar-dropdown">
+      <a href="#" class="navbar-dropdown-toggle">Products &#9662;</a>
+      <div class="navbar-dropdown-menu">
+        <a href="#">TB and Public Health</a>
+        <a href="#">Lung Cancer</a>
+        <a href="#">Stroke Care</a>
+      </div>
+    </div>
+    <a href="#">Impact</a>
+    <a href="#">Evidence</a>
+    <a href="#">Insights</a>
+  </div>
+
+  <div class="navbar-right">
+    <button class="navbar-button">Schedule Demo</button>
+  </div>
+</nav>
+
+
+
+
+<!-- Mobile MEnu -->
+<header class="mobile-navbar">
+  <div class="mobile-navbar-top">
+    <div class="mobile-logo-name">
+      <img src="images/favicon.webp" alt="Logo" class="mobile-logo-img" />
+      <h1 class="mobile-logo-text">The Edge Bio</h1>
+    </div>
+    <div class="mobile-hamburger" id="mobile-hamburger">&#9776;</div>
+  </div>
+
+  <nav class="mobile-menu" id="mobile-menu">
+    <ul class="mobile-menu-list">
+      <li class="mobile-menu-item mobile-has-dropdown">
+        <a href="#" class="mobile-menu-link">
+          Products <span class="mobile-arrow">&#9662;</span>
+        </a>
+        <ul class="mobile-dropdown">
+          <li><a href="#" class="mobile-menu-link">TB and Public Health</a></li>
+          <li><a href="#" class="mobile-menu-link">Lung Cancer</a></li>
+          <li><a href="#" class="mobile-menu-link">Stroke Care</a></li>
+        </ul>
+      </li>
+      <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Impact</a></li>
+      <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Evidence</a></li>
+      <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Insights</a></li>
+      <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Schedule Demo</a></li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+  const mobileHamburger = document.getElementById("mobile-hamburger");
+const mobileMenu = document.getElementById("mobile-menu");
+const mobileDropdownToggle = document.querySelector(".mobile-has-dropdown > .mobile-menu-link");
+const mobileDropdown = document.querySelector(".mobile-has-dropdown .mobile-dropdown");
+
+mobileHamburger.addEventListener("click", () => {
+  mobileMenu.style.display = mobileMenu.style.display === "flex" ? "none" : "flex";
+});
+
+mobileDropdownToggle.addEventListener("click", (e) => {
+  e.preventDefault();
+  mobileDropdown.style.display = mobileDropdown.style.display === "block" ? "none" : "block";
+});
+
+</script>
+<!-- Nav end -->
+
+
+<!-- Header -->
+ <div id="header-main-container">
+    <div id="header-main-inner-container">
+        <div id="header-main-left">
+            <h1>The future of better outcomes starts here</h1>
+            <p>The Edge Bio bridges the gap between patients, clinicians, and life-saving treatments through its advanced AI-powered care coordination platform — backed by more than 50 FDA-cleared algorithms.</p>
+            <a href="#">Schedule a Demo</a>
+        </div>
+        <div id="header-main-right">
+            <video autoplay loop muted playsinline>
+  <source src="https://qure-website-images.s3.ap-south-1.amazonaws.com/Homepage_animation_98e394c1e1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+        </div>
+    </div>
+ </div>
+<!-- Header -->
+
+<!-- Marquee -->
+
+
+<!-- Marquee -->
+
+
+<!-- Expand -->
+ 
+<div id="expan-section-heading">
+    <h2>Transforming Healthcare with AI</h2>
+</div>
+
+<div class="expand-section">
+  <!-- 1 -->
+    <div class="expand-card expand-expanded" data-card="1">
+    <h3 class="expand-heading">Advancing Access for Tuberculosis</h3>
+    <p class="expand-desc">WHO-evaluated AI solutions to support clinicians in making quick and accurate diagnosis and treatment decisions...</p>
+    <button class="expand-btn">Learn More</button>
+  </div>
+<!-- 2 -->
+  <div class="expand-card" data-card="2">
+    <h3 class="expand-heading">Global Silicosis Detection</h3>
+    <p class="expand-desc">Empowering global health systems with AI to detect and respond to Silicosis efficiently...</p>
+    <button class="expand-btn">Learn More</button>
+  </div>
+<!-- 3 -->
+  <div class="expand-card" data-card="3">
+    <h3 class="expand-heading">Pediatric TB AI Diagnostics</h3>
+    <p class="expand-desc">Specialized pediatric TB diagnostic support through intelligent imaging and decision tools...</p>
+    <button class="expand-btn">Learn More</button>
+  </div>
+  <!-- end -->
+</div>
+<script>
+const expandCards = document.querySelectorAll('.expand-card');
+
+expandCards.forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    expandCards.forEach(c => c.classList.remove('expand-expanded'));
+    card.classList.add('expand-expanded');
+  });
+});
+</script>
+<!-- mobile expand cards -->
+ <div id="mobile-expand-card-section">
+    <!-- 1 -->
+    <div id="mobile-expand-card">
+        <h2>Advancing Access for Tuberculosis</h2>
+        <p>WHO-evaluated AI solutions to support clinicians in making quick and accurate diagnosis and treatment decisions...</p>
+        <button>Learn More</button>
+    </div>
+    <!-- 2 -->
+     <div id="mobile-expand-card">
+        <h2>Global Silicosis Detection</h2>
+        <p>Empowering global health systems with AI to detect and respond to Silicosis efficiently...</p>
+        <button>Learn More</button>
+    </div>
+    <!-- 3 -->
+     <div id="mobile-expand-card">
+        <h2>Pediatric TB AI Diagnostics</h2>
+        <p>Specialized pediatric TB diagnostic support through intelligent imaging and decision tools...</p>
+        <button>Learn More</button>
+    </div>
+    <!-- end -->
+ </div>
+<!-- mobile expand cards -->
+
+
+
+</body>
+</html>
