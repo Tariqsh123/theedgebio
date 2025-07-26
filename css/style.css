@@ -507,23 +507,23 @@
 }
 /* Default background image */
 [data-card="1"] {
-  background-image: url('/images/expand-before-card-image.webp');
+  background-image: url('../images/expand-before-card-image.webp');
 }
 [data-card="2"] {
-  background-image: url('/images/expand-before-card-image.webp');
+  background-image: url('../images/expand-before-card-image.webp');
 }
 [data-card="3"] {
-  background-image: url('/images/expand-before-card-image.webp');
+  background-image: url('../images/expand-before-card-image.webp');
 }
 /* Expanded background image */
 [data-card="1"].expand-expanded {
-  background-image: url('/images/Expand-card-image.webp');
+  background-image: url('../images/Expand-card-image.webp');
 }
 [data-card="2"].expand-expanded {
-  background-image: url('/images/Expand-card-image.webp');
+  background-image: url('../images/Expand-card-image.webp');
 }
 [data-card="3"].expand-expanded {
-  background-image: url('/images/Expand-card-image.webp');
+  background-image: url('../images/Expand-card-image.webp');
 }
 .expand-heading {
   font-size: 40px;
