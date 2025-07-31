@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+#terms-main-container{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #08354e;
+    flex-direction: column;
+}
+#terms-heading-container{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid white;
+    align-items: center;
+    justify-content: center;
+}
+#terms-heading{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    height: fit-content;
+    padding: 50px 0;
+    width: 50%;
+}
+#terms-heading span{
+    color: white;
+}
+#terms-heading h1{
+    color:  #33cbd9;
+    font-size: 35px;
+}
+#terms-second-main-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#terms-bottom-container{
+    height: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+    justify-content: space-evenly;
+    text-align: center;
+}
+#terms-bottom-container h5{
+    color: gray;
+    text-align: left;
+    width: 100%;
+    margin-top: 40px;
+}
+#terms-bottom-container p{
+    text-align: left;
+    color: white;
+}
+#terms-bottom-container p span{
+    color:  #33cbd9;
+}
+#terms-bottom-container h2{
+    color: white;
+    text-align: left;
+}
+#terms-bottom-container span{
+    font-weight: 500;
+    color: black;
+}
+@media (max-width: 600px){
+    #terms-upper-container{
+        height: 300px;
+        width: 80%;
+    }
+}
